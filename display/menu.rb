@@ -1,3 +1,5 @@
+require_relative "screen_operations"
+
 def start_menu
   loop do
     puts "choose one of the options below:"
@@ -11,17 +13,18 @@ def start_menu
 
     case option
     when 1
-      puts 'register products'
+      message 'register products'
     when 2
-      puts 'list products'
+      message 'list products'
     when 3
-      puts 'remove products'
+      message 'remove products'
     when 4
       exit
     else
-      puts "Invalid option."
+      message "Invalid option.", 1
     end
 
     puts "~" * 50
+    clear_screen
   end
 end
