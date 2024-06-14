@@ -1,8 +1,8 @@
 def message(msg, use_clear_screen=true, use_timer=true, timer=5)
-  clean_screen if clean_screen
+  clean_screen if use_clear_screen
   puts msg
   sleep(timer) if use_timer
-  clean_screen if clean_screen
+  clean_screen if use_clear_screen
 end
 
 def color_text(text, color=nil)
