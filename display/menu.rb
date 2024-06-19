@@ -1,4 +1,4 @@
-def start_menu
+def start_menu(products)
   loop do
     puts color_text("#{'=' * 6} choose one of the options below #{'=' * 6}", "yellow")
     puts color_text("1. Products registration", "blue")
@@ -11,7 +11,7 @@ def start_menu
 
     case option
     when 1
-      message color_text('register products', "green")
+      product_registration(products)
     when 2
       message color_text('list products', "green")
     when 3
