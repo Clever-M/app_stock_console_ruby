@@ -13,7 +13,7 @@ def start_menu(products)
     when 1
       product_registration(products)
     when 2
-      message color_text('list products', "green")
+      list_products(products)
     when 3
       message color_text('remove products', "green")
     when 4

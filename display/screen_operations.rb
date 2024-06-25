@@ -7,7 +7,8 @@ end
 
 def color_text(text, color=nil)
   colors = { "green"  => "32", "red"  => "31",
-             "yellow" => "33", "blue" => "34"}
+             "yellow" => "33", "blue" => "34",
+             "purple" => "36"}
 
   return "\e[#{[colors[color], 'm', text].join('')}\e[0m" if colors.keys.include? color
 

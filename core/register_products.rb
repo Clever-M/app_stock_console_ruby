@@ -31,4 +31,8 @@ def product_registration(products)
     price:,
     quantity:
   })
+
+  message([color_text("O produto ", "green"),
+           color_text(name, "yellow"),
+           color_text(" foi cadastrado com sucesso!!!", "green")].join, true, true, 3)
 end
