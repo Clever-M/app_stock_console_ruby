@@ -11,13 +11,13 @@ def product_registration(products)
   description = gets.chomp
   clean_screen
 
-  message([color_text("Type the product's price: (", "blue"),
+  message([color_text("Type the product's price (", "blue"),
            color_text(name, "green"),
            color_text("):", "blue")].join, false, false)
   price = gets.to_f
   clean_screen
 
-  message([color_text("Type the quantity of the product in stock: (", "blue"),
+  message([color_text("Type the quantity of the product in stock (", "blue"),
            color_text(name, "green"),
            color_text("):", "blue")].join, false, false)
 
